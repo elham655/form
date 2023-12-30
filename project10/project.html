@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beautiful-form.webp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+</head>
+<body>
+    <div class="parent">
+        <!-- sabject -->
+        <div class="subject">
+            <h1>Christmas Fundraiser Dinner</h1>
+        </div>
+        <!-- container  -->
+        <div class="container">
+            <div class="text">
+               <h3>Get your ficket for our annual fundraiser dinner.Hurry,we are in short supply!</h3>
+            </div>
+        </div>
+        <!-- line -->
+        <div class="line"></div>
+        <div class="container">
+            <form action="files/get_data.php" method="POST">
+              <label for="user1 user2">Name <span  style="color: red;">*</span>
+              </label>
+              <!-- name  -->
+                 <input type="last" id="user1">
+                 <input type="family" id="user2">
+               <br>
+               <div class="name font">
+                 <h4 >First</h4><h4>Last</h4> 
+               </div><br>
+               <!-- email  -->
+               <label for="email">Email <span style="color: red;">*</span>
+               </label>
+                 <input type="email" id="email"><br>
+                 <!-- phone -->
+                <label for="number1 number2 number3 number ">Phone<span style="color: red;"> *</span>
+                </label>
+                   <input type="phone"   id="number1"><span>&nbsp; - &nbsp; </span>
+                   <input type="phone"   id="number2"><span>&nbsp; -&nbsp; </span>
+                   <input type="phone" id="number3"><br>
+                <div class="name2 font">
+                    <h5 >###</h5> <h4 >###</h4> <h4 >####</h4> 
+                </div><br>
+                 
+            <label for="tik ">Terms<span style="color: red;"> *</span>
+                </label>
+                <input type="checkbox" id="tik"><p class="note font">I accept the terms and conditions</p><br>
+
+
+            <label for="tik2 ">Quantity <span style="color: red;"> *</span>
+                </label>
+            <input type="checkbox" id="tik2"><p class="note2 font">Dinner Ticket $30.00USD</p><br>
+
+            <!-- rol  -->
+            <div class="rol">
+                <!-- <i class="fa fa-angle-down flesh" ></i> -->
+                <input type="text" >
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>  
+            </div>
+
+            <div class="total">
+                <h3>Total</h3><h3>$30.00</h3>
+            </div>
+            <div class="total2">
+                <h5>1</h5><h5>$30.00</h5>
+            </div>
+            <input type="button" onclick="alert('Sent')" class="end"  value="PURCHASE">
+            </form>
+            
+        </div>
+        
+    </div>
+        
+</body>
+</html>
